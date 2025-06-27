@@ -58,4 +58,7 @@ app.get('/ventas', async (req, res) => {
 app.listen(process.env.PORT || 3000, () => {
   console.log('🚀 Backend CRMSG corriendo');
 });
-
+// Ruta de prueba para verificar que el servidor responde
+app.get('/test', (req, res) => {
+  res.json({ message: 'La API está viva y conectada correctamente' });
+});
